@@ -45,80 +45,104 @@ using namespace std;
 //[0][][][3][0][][][3][0][][][3][0][][][3]
 
 
+//int main()
+//{
+//	
+//	//int 정수, 2^32
+//	// bool: true, false, 1바이트
+//	//bool End = false;
+//	//bool condition[20]이렇게 배열 선언 후 if 옆에 if(condition[0]),[1]로 하자
+//	
+//	//if , else if 구조 기억! 
+//
+//
+//	
+//	//if (false)
+//	//{
+//	//	cout < "A" << endl;
+//	//}
+//	//else
+//	//{
+//	//	cout << "B" << endl;
+//	//}
+//	
+//	// 
+//	//for (;;) //이렇게만 해도 실행 
+//	//{
+//
+//	//}
+//	//for (int i = 0; false;)//false 기 때문에 바로 끝남. true면 계속 반복
+//	//{
+//	//	cout << "for" << endl;
+//	//}
+//
+//
+//	//> < >- <= != =
+//	//-------------------------
+//	//int Array[10];
+//
+//
+//	//for (int i = 0; i < 10;i++) //i = i+1
+//	//{
+//	//	Array[i] = i + 1;
+//	//	//cout << i << endl;
+//
+//	//}
+//	//for (int i = 0; i < 10; i++)
+//	//{
+//	//	cout << Array[i] << ", ";
+//	//}
+//	//---------------------------
+//
+//	//반복문 1부터 100까지의 합 구하기
+//	//int sum = 0;
+//	//for (int i = 0; i <= 100; i++)
+//	//{
+//	//	sum += i;
+//	//}
+//	//for (int i = 1; i <= 100; i=i+2)//짝수만 더하기
+//	//{
+//	//	sum += i;
+//	//}
+//	//cout << sum << endl;
+//
+//
+//	//A->65, Mapping, Item -> 1매핑
+//	int Inventory[100];
+//	int ToTalPrice = 0;
+//	int ProductPrice[100] = { 0. };
+//	int MyCartCount = 0;
+//
+//	ProductPrice[MyCartCount] = 10000;
+//	MyCartCount++;
+//	ProductPrice[MyCartCount] = 10000;
+//	MyCartCount++;
+//
+//	
+//
+//	return 0;
+//}
+
+//------------------
 int main()
 {
-	
-	//int 정수, 2^32
-	// bool: true, false, 1바이트
-	//bool End = false;
-	//bool condition[20]이렇게 배열 선언 후 if 옆에 if(condition[0]),[1]로 하자
-	
-	//if , else if 구조 기억! 
+	int Map[10][10] = {
+		{1,1,1,1,1,1,1,1,1,1},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,0,0,0,0,0,0,0,0,0},
+		{1,1,1,1,1,1,1,1,1,1}
 
+	};
 
-	
-	//if (false)
-	//{
-	//	cout < "A" << endl;
-	//}
-	//else
-	//{
-	//	cout << "B" << endl;
-	//}
-	
-	// 
-	//for (;;) //이렇게만 해도 실행 
-	//{
-
-	//}
-	//for (int i = 0; false;)//false 기 때문에 바로 끝남. true면 계속 반복
-	//{
-	//	cout << "for" << endl;
-	//}
-
-
-	//> < >- <= != =
-	//-------------------------
-	//int Array[10];
-
-
-	//for (int i = 0; i < 10;i++) //i = i+1
-	//{
-	//	Array[i] = i + 1;
-	//	//cout << i << endl;
-
-	//}
-	//for (int i = 0; i < 10; i++)
-	//{
-	//	cout << Array[i] << ", ";
-	//}
-	//---------------------------
-
-	//반복문 1부터 100까지의 합 구하기
-	//int sum = 0;
-	//for (int i = 0; i <= 100; i++)
-	//{
-	//	sum += i;
-	//}
-	//for (int i = 1; i <= 100; i=i+2)//짝수만 더하기
-	//{
-	//	sum += i;
-	//}
-	//cout << sum << endl;
-
-
-	//A->65, Mapping, Item -> 1매핑
-	int Inventory[100];
-	int ToTalPrice = 0;
-	int ProductPrice[100] = { 0. };
-	int MyCartCount = 0;
-
-	ProductPrice[MyCartCount] = 10000;
-	MyCartCount++;
-	ProductPrice[MyCartCount] = 10000;
-	MyCartCount++;
-
-	
-
+	for (int X = 0; X < 10; ++X)
+	{
+		cout << Map[0][X];
+	}
 	return 0;
 }
