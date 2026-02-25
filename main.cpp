@@ -44,7 +44,7 @@ using namespace std;
 
 //[0][][][3][0][][][3][0][][][3][0][][][3]
 
-//
+
 int main()
 {
 	
@@ -56,12 +56,8 @@ int main()
 	//if , else if 구조 기억! 
 
 
-	//for (int i = 0; false;)//false 기 때문에 바로 끝남. true면 계속 반복
-	//{
-	//	cout << "for" << endl;
-	//}
-
-		//if (false)
+	
+	//if (false)
 	//{
 	//	cout < "A" << endl;
 	//}
@@ -69,11 +65,15 @@ int main()
 	//{
 	//	cout << "B" << endl;
 	//}
-	//int Array[10];
-	//bool End = true;
+	
+	// 
 	//for (;;) //이렇게만 해도 실행 
 	//{
 
+	//}
+	//for (int i = 0; false;)//false 기 때문에 바로 끝남. true면 계속 반복
+	//{
+	//	cout << "for" << endl;
 	//}
 
 
@@ -85,16 +85,13 @@ int main()
 	for (int i = 0; i < 10;i++) //i = i+1
 	{
 		Array[i] = i + 1;
-		cout << i << endl;
+		//cout << i << endl;
 
 	}
-	
-	
-	
-
-
-
-
+	for (int i = 0; i < 10; i++)
+	{
+		cout << Array[i] << " ";
+	}
 
 	return 0;
 }
