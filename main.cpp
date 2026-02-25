@@ -1,3 +1,6 @@
+
+//정수2개 입력받고 5개의 산술연산자 활용하여 작성하기
+
 #include <iostream>
 
 using namespace std;
