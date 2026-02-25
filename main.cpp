@@ -226,35 +226,56 @@ using namespace std;
 //	return 0;
 //}
 
-int main() {
+//연산자 우선순위  필기
+//int main() {
+//
+//	bool Result1 = true;
+//	bool Result2 = false;
+//	bool Result3 = false;
+//
+//	if (Result1 && Result2) //or 두조건 중 하나만 참이면
+//	{
+//		cout << "안녕1" << endl;
+//	}
+//
+//	if (Result1 || Result2) //or 두 조건 중 하나만 참이면
+//	{
+//		cout << "안녕2" << endl;
+//	}
+//
+//	if (!Result2) //or 두 조건 중 하나만 참이면
+//	{
+//		cout << "안녕3" << endl;
+//	}
+//
+//	//연산자 우선 순위
+//	//() 이게 젤 먼저다  
+//	
+//
+//	cout << (Result1 && Result2) << endl;  //둘중 하나라도 거짓이므로 0
+//	cout << (Result1|| Result2) << endl; //Result1이 참이므로 성립
+//	cout << (Result1 || (Result2 && Result3)) << endl;
+//
+//
+//	return 0;
+//}
 
-	bool Result1 = true;
-	bool Result2 = false;
-	bool Result3 = false;
-
-	if (Result1 && Result2) //or 두조건 중 하나만 참이면
-	{
-		cout << "안녕1" << endl;
-	}
-
-	if (Result1 || Result2) //or 두 조건 중 하나만 참이면
-	{
-		cout << "안녕2" << endl;
-	}
-
-	if (!Result2) //or 두 조건 중 하나만 참이면
-	{
-		cout << "안녕3" << endl;
-	}
-
-	//연산자 우선 순위
-	//() 이게 젤 먼저다  
-	
-
-	cout << (Result1 && Result2) << endl;  //둘중 하나라도 거짓이므로 0
-	cout << (Result1|| Result2) << endl; //Result1이 참이므로 성립
-	cout << (Result1 || (Result2 && Result3)) << endl;
 
 
+//int - 정수형 숫자
+//bool - True, False,저장
+
+//char- 문자 숫자
+//float- 실수,0010101
+
+int main()
+{
+	char Temp = 'A'+1;
+	float A = 0.0f;//항상 초기화 해주고 사용하기. 
+	float A[10] = { 0, }; //여러개 작업하려면 배열 사용함
+
+
+	cout << Temp;
 	return 0;
 }
+//문자인지 숫자인지 거기에 맞게 출력을 해준다.
