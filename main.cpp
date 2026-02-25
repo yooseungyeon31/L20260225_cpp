@@ -2,6 +2,7 @@
 //정수2개 입력받고 5개의 산술연산자 활용하여 작성하기
 
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -161,9 +162,38 @@ int main()
 
 	int PlayerX = 1;
 	int PlayerY = 1;
+
+	//GameLoop
+	//Frame
 	for (;;)
 	{
 
+		//Input
+		int Input;
+		Input = _getch(); //'w','a','s','d'
+
+		//Process
+		if (Input == 'w')
+		{
+			PlayerY--;
+		}
+		if (Input == 'a')
+		{
+			PlayerX--;
+		}
+		if (Input == 's')
+		{
+			PlayerY++;
+		}
+		if (Input == 'd')
+		{
+			PlayerX++;
+		}
+
+
+		system("cls");
+
+		//Render
 		for (int Y = 0; Y < 10; ++Y)
 		{
 			for (int X = 0; X < 10; ++X)
@@ -185,9 +215,11 @@ int main()
 		}
 
 	
-		int Temp;
-		cin >> Temp;
-		PlayerX++;
+		
+	
+		//input->Process->Render 순으로 한다( 1/60 안에
+	
+
 	}
 
 
