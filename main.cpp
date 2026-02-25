@@ -144,83 +144,116 @@ using namespace std;
 	cout << endl;*/
 
 //------------------
-int main()
-{
-	int Map[10][10] = {
-		{1,1,1,1,1,1,1,1,1,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,1,1,1,1,1,1,1,1,1}
+//int main()
+//{
+//	int Map[10][10] = {
+//		{1,1,1,1,1,1,1,1,1,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,0,0,0,0,0,0,0,0,1},
+//		{1,1,1,1,1,1,1,1,1,1}
+//
+//	};
+//
+//	int PlayerX = 1;
+//	int PlayerY = 1;
+//
+//	//GameLoop
+//	//Frame
+//	for (;;)
+//	{
+//
+//		//Input
+//		int Input;
+//		Input = _getch(); //'w','a','s','d'
+//
+//		//Process
+//		if (Input == 'w')
+//		{
+//			PlayerY--;
+//		}
+//		if (Input == 'a')
+//		{
+//			PlayerX--;
+//		}
+//		if (Input == 's')
+//		{
+//			PlayerY++;
+//		}
+//		if (Input == 'd')
+//		{
+//			PlayerX++;
+//		}
+//
+//
+//		system("cls");
+//
+//		//Render
+//		for (int Y = 0; Y < 10; ++Y)
+//		{
+//			for (int X = 0; X < 10; ++X)
+//			{
+//				if (PlayerX == X && PlayerY == Y)
+//				{
+//					cout << "%";
+//				}
+//				else if (Map[Y][X] == 1)
+//				{
+//					cout << "#";
+//				}
+//				else if (Map[Y][X] == 0)
+//				{
+//					cout << " ";
+//				}
+//			}
+//			cout << endl;
+//		}
+//
+//	
+//		
+//	
+//		//input->Process->Render 순으로 한다( 1/60 안에
+//	
+//
+//	}
+//
+//
+//	return 0;
+//}
 
-	};
+int main() {
 
-	int PlayerX = 1;
-	int PlayerY = 1;
+	bool Result1 = true;
+	bool Result2 = false;
+	bool Result3 = false;
 
-	//GameLoop
-	//Frame
-	for (;;)
+	if (Result1 && Result2) //or 두조건 중 하나만 참이면
 	{
-
-		//Input
-		int Input;
-		Input = _getch(); //'w','a','s','d'
-
-		//Process
-		if (Input == 'w')
-		{
-			PlayerY--;
-		}
-		if (Input == 'a')
-		{
-			PlayerX--;
-		}
-		if (Input == 's')
-		{
-			PlayerY++;
-		}
-		if (Input == 'd')
-		{
-			PlayerX++;
-		}
-
-
-		system("cls");
-
-		//Render
-		for (int Y = 0; Y < 10; ++Y)
-		{
-			for (int X = 0; X < 10; ++X)
-			{
-				if (PlayerX == X && PlayerY == Y)
-				{
-					cout << "%";
-				}
-				else if (Map[Y][X] == 1)
-				{
-					cout << "#";
-				}
-				else if (Map[Y][X] == 0)
-				{
-					cout << " ";
-				}
-			}
-			cout << endl;
-		}
-
-	
-		
-	
-		//input->Process->Render 순으로 한다( 1/60 안에
-	
-
+		cout << "안녕1" << endl;
 	}
+
+	if (Result1 || Result2) //or 두 조건 중 하나만 참이면
+	{
+		cout << "안녕2" << endl;
+	}
+
+	if (!Result2) //or 두 조건 중 하나만 참이면
+	{
+		cout << "안녕3" << endl;
+	}
+
+	//연산자 우선 순위
+	//() 이게 젤 먼저다  
+	
+
+	cout << (Result1 && Result2) << endl;  //둘중 하나라도 거짓이므로 0
+	cout << (Result1|| Result2) << endl; //Result1이 참이므로 성립
+	cout << (Result1 || (Result2 && Result3)) << endl;
 
 
 	return 0;
