@@ -5,23 +5,94 @@
 
 using namespace std;
 
+//int main()
+//{
+//
+	//int Number1= 0; // OS님께 정수형 저장공간 위치값 주세요. 
+	//int Number2 = 0;
+
+	//cout << "숫자 2개 입력: " << endl;
+	//cin >> Number1;
+	//cin >> Number2;
+
+	//cout <<"Number1 + Number2 =" << Number1 + Number2 << endl;
+	//cout << "Number1 * Number2 =" << Number1 * Number2 << endl;
+	//cout << "Number1 / Number2 =" << Number1 / Number2 << endl;
+	//cout << "Number1 % Number2 =" << Number1 % Number2 << endl;
+	//cout << "Number1 - Number2 =" << Number1 - Number2 << endl;
+
+	////\n \t \b \\   
+	////줄바꿈, 탭만큼 뛰기, 뒤로가서 입력, 그냥 \ 사용
+//
+//
+//	//return 0;
+//
+//	
+//}
+
+
+//Array
+//[][][][][][][][]
+//Array[0] -> 000011q3bfca + 0
+
+//2D->3D
+//Array[4][4] -> 000011q3bfca + 0
+//[0][][][3]
+//[0][][][3]
+//[0][][][3]
+//[0][][][3]
+
+//[0][][][3][0][][][3][0][][][3][0][][][3]
+
+//
 int main()
 {
+	
+	//int 정수, 2^32
+	// bool: true, false, 1바이트
+	//bool End = false;
+	//bool condition[20]이렇게 배열 선언 후 if 옆에 if(condition[0]),[1]로 하자
+	
+	//if , else if 구조 기억! 
 
-	int Number1= 0; // OS님께 정수형 저장공간 위치값 주세요. 
-	int Number2 = 0;
 
-	cout << "숫자 2개 입력: " << endl;
-	cin>> Number1 >> Number2;
+	//for (int i = 0; false;)//false 기 때문에 바로 끝남. true면 계속 반복
+	//{
+	//	cout << "for" << endl;
+	//}
 
-	cout <<"Number1 + Number2 =" << Number1 + Number2 << endl;
-	cout << "Number1 * Number2 =" << Number1 * Number2 << endl;
-	cout << "Number1 / Number2 =" << Number1 / Number2 << endl;
-	cout << "Number1 % Number2 =" << Number1 % Number2 << endl;
-	cout << "Number1 - Number2 =" << Number1 - Number2 << endl;
+		//if (false)
+	//{
+	//	cout < "A" << endl;
+	//}
+	//else
+	//{
+	//	cout << "B" << endl;
+	//}
+	//int Array[10];
+	//bool End = true;
+	//for (;;) //이렇게만 해도 실행 
+	//{
 
-	//하이
-	//메롱
+	//}
+
+
+	//> < >- <= != =
+
+	int Array[10];
+
+
+	for (int i = 0; i < 10;i++) //i = i+1
+	{
+		Array[i] = i + 1;
+		cout << i << endl;
+
+	}
+	
+	
+	
+
+
 
 
 
